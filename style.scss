@@ -1,37 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
+$primary-dark: #242325;
+$primary-light: #EDECEE;
+$highlight-color: #8AE1FC;
+$hover-color: #F3FBFE;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
 body {
-    background-color: #242325;
     text-align: center;
-    font-size: 16px;
     font-family: 'Inconsolata', monospace;
-    letter-spacing: 2px;
     font-weight: 400;
+}
+
+/*typography*/
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: $primary-light;
+    margin-top: 0;
 }
 
 h1 {
     font-size: 4rem;
-    color: #EDECEE;
     letter-spacing: 5px;
-    font-weight: 700;
 }
 
 h2 {
-    color: #EDECEE;
     font-size: 3rem;
     letter-spacing: 3px;
-    font-weight: 700;
 }
 
-span {
-    color: #8AE1FC;
+h3 {
+    color: inherit;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
-a {
+p {
+    margin-top: 0;
+    text-align: justify;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+
+.highlight {
+    color: $highlight-color;
+}
+
+/*links*/
+
+.nav-links {
     font-size: 1.3rem;
+    position: relative;
     text-decoration: none;
-    color: #8AE1FC;
-    &:hover {
-        color: #F3FBFE;
+    color: $highlight-color;
+    letter-spacing: 2px;
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 1.5rem;
+        left: 0;
+        width: 50%;
+        transform: translateX(50%);
+        border-bottom: 1px dashed $highlight-color;
+        transition: .2s linear;
     }
+    &:hover {
+        color: $hover-color;
+        &::after {
+            border-color: $hover-color;
+            width: 90%;
+            transform: translateX(5%);
+            transition: .2s linear;
+        }
+    }
+}
+
+.section-links {
+    color: inherit;
+    text-underline-position: under;
+    &:hover {
+        text-decoration-line: overline;
+    }
+}
+
+/*layout*/
+
+header, section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+}
+
+.dark-section {
+    background-color: $primary-dark;
+    color: $primary-light;
+}
+
+.light-section {
+    background-color: $primary-light;
+    color: $primary-dark;
 }
