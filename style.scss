@@ -64,6 +64,7 @@ p {
     text-decoration: none;
     color: $highlight-color;
     letter-spacing: 2px;
+    margin-right: 1rem;
     &::after {
         content: "";
         display: inline-block;
@@ -90,7 +91,8 @@ p {
     color: inherit;
     text-underline-position: under;
     &:hover {
-        text-decoration-line: overline;
+        text-decoration: none;
+        font-weight: 700;
     }
 }
 
@@ -112,4 +114,14 @@ header, section {
 .light-section {
     background-color: $primary-light;
     color: $primary-dark;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+    width: 250px;
+    height: auto;
 }

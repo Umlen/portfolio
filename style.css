@@ -56,6 +56,7 @@ p {
   text-decoration: none;
   color: #8AE1FC;
   letter-spacing: 2px;
+  margin-right: 1rem;
 }
 .nav-links::after {
   content: "";
@@ -83,8 +84,8 @@ p {
   text-underline-position: under;
 }
 .section-links:hover {
-  -webkit-text-decoration-line: overline;
-          text-decoration-line: overline;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 /*layout*/
@@ -104,4 +105,14 @@ header, section {
 .light-section {
   background-color: #EDECEE;
   color: #242325;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+  width: 250px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
