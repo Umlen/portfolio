@@ -99,11 +99,11 @@ p {
 /*layout*/
 
 header, section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 5rem;
 }
 
 .dark-section {
@@ -119,9 +119,11 @@ header, section {
 .projects-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
-
-img {
-    width: 250px;
-    height: auto;
+    gap: 2rem;
+    & img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: .5rem;
+        border-radius: 10px;
+    }
 }
