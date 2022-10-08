@@ -112,9 +112,15 @@ header, section {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
-.projects-container img {
+
+.project-img {
   max-width: 100%;
   height: auto;
   margin-bottom: 0.5rem;
   border-radius: 10px;
+  box-shadow: 0 0 20px 2px #000;
+}
+.project-img:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
