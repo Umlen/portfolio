@@ -56,6 +56,8 @@ p {
   text-decoration: none;
   color: #8AE1FC;
   letter-spacing: 2px;
+}
+.nav-links:not(:last-child) {
   margin-right: 1rem;
 }
 .nav-links::after {
@@ -97,6 +99,16 @@ header, section {
   padding: 5rem;
 }
 
+.fixed-nav {
+  background-color: #242325;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 .dark-section {
   background-color: #242325;
   color: #EDECEE;
@@ -123,4 +135,65 @@ header, section {
 .project-img:hover {
   transform: scale(1.01);
   cursor: pointer;
+}
+
+.contacts-wrapper a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/*media queries*/
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 850px) {
+  body {
+    font-size: 16px;
+  }
+  header, section {
+    padding: 3rem;
+  }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    font-size: 1rem;
+  }
+  header, section {
+    padding: 1rem;
+  }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .contacts-wrapper a:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 390px) {
+  body {
+    font-size: 12px;
+  }
+  header, section {
+    padding: 0.75rem;
+  }
 }/*# sourceMappingURL=style.css.map */

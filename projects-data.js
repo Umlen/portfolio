@@ -1,10 +1,10 @@
 export const projects = [
     {
         id: 1,
-        name: 'Intro Section',
-        code: 'https://github.com/Umlen/intro-section',
-        demo: 'https://intro-section-gold.vercel.app/',
-        screenshot: '/images/projects/intro-section.png',
+        name: 'Restaurant Ordering App',
+        code: 'https://github.com/Umlen/restaurant-ordering-app-solo-project',
+        demo: 'https://astounding-melba-d6c85a.netlify.app/',
+        screenshot: '/images/projects/restaurant-ordering-app.png',
     },
     {
         id: 2,
