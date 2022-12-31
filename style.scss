@@ -78,7 +78,8 @@ p {
         border-bottom: 1px dashed $highlight-color;
         transition: .2s linear;
     }
-    &:hover {
+    &:hover,
+    &:focus {
         color: $hover-color;
         &::after {
             border-color: $hover-color;
@@ -92,9 +93,20 @@ p {
 .section-links {
     color: inherit;
     text-underline-position: under;
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration: none;
         font-weight: 700;
+    }
+}
+
+.projects-links {
+    text-decoration: none;
+    color: $primary-light;
+    letter-spacing: 1.3px;
+    &:hover,
+    &:focus {
+        color: $highlight-color;
     }
 }
 
@@ -132,17 +144,19 @@ header, section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    align-items: end;
 }
 
 .project-img {
     max-width: 100%;
     height: auto;
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
     border-radius: 10px;
     box-shadow: 0 0 20px 2px #000;
     &:hover {
         transform: scale(1.01);
         cursor: pointer;
+        box-shadow: 0 0 20px rgba(255, 255, 255, .7);
     }
 }
 

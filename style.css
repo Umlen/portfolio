@@ -71,10 +71,10 @@ p {
   border-bottom: 1px dashed #8AE1FC;
   transition: 0.2s linear;
 }
-.nav-links:hover {
+.nav-links:hover, .nav-links:focus {
   color: #F3FBFE;
 }
-.nav-links:hover::after {
+.nav-links:hover::after, .nav-links:focus::after {
   border-color: #F3FBFE;
   width: 90%;
   transform: translateX(5%);
@@ -85,9 +85,18 @@ p {
   color: inherit;
   text-underline-position: under;
 }
-.section-links:hover {
+.section-links:hover, .section-links:focus {
   text-decoration: none;
   font-weight: 700;
+}
+
+.projects-links {
+  text-decoration: none;
+  color: #EDECEE;
+  letter-spacing: 1.3px;
+}
+.projects-links:hover, .projects-links:focus {
+  color: #8AE1FC;
 }
 
 /*layout*/
@@ -123,18 +132,20 @@ header, section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  align-items: end;
 }
 
 .project-img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   border-radius: 10px;
   box-shadow: 0 0 20px 2px #000;
 }
 .project-img:hover {
   transform: scale(1.01);
   cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
 .contacts-wrapper a:not(:last-child) {

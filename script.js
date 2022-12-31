@@ -13,8 +13,8 @@ function redner() {
                 <a href="${project.demo}" target="_blank">
                     <img class="project-img" src="${project.screenshot}" alt="">
                 </a>
-                <a href="${project.code}" target="_blank" class="section-links">Code</a>
-                <a href="${project.demo}" target="_blank" class="section-links">Demo</a>
+                <a href="${project.code}" target="_blank" class="projects-links">Code</a>
+                <a href="${project.demo}" target="_blank" class="projects-links">Demo</a>
             </div>
         `;
     }

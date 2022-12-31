@@ -55,4 +55,25 @@ export const projects = [
         demo: 'https://tip-calculator-app-orpin.vercel.app/',
         screenshot: '/images/projects/tip-calculator-app.png',
     },
+    {
+        id: 9,
+        name: 'Color Scheme Generator',
+        code: 'https://github.com/Umlen/solo-project-color-scheme-generator',
+        demo: 'https://stupendous-lily-197b40.netlify.app/',
+        screenshot: '/images/projects/color-scheme-generator.png',
+    },
+    {
+        id: 10,
+        name: 'Movie Watchlist',
+        code: 'https://github.com/Umlen/solo-project-movie-watchlist',
+        demo: 'https://dulcet-kitsune-4568ad.netlify.app/',
+        screenshot: '/images/projects/movie-watchlist.png',
+    },
+    {
+        id: 11,
+        name: 'Business Card',
+        code: 'https://github.com/Umlen/business-card-solo-project',
+        demo: 'https://voluble-druid-79274c.netlify.app/',
+        screenshot: '/images/projects/business-card.png',
+    },
 ]
